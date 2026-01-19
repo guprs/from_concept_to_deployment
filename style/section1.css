@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #314a52; 
+  --accent-color: #ffda5a;
+  --text-dark: #222;
+  --white: #ffffff;
+}
+
+.section1 {
+    width: 100%; 
+    max-width: 1440px;
+    height: 296px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D6D6D6;
+    background-color: #f9f9f9; 
+}
+
+.logo-container {
+    display: flex;
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 80px;
+    border: 1px solid #ccc;
+    background: white;
+}
