@@ -1,25 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-        </nav>
-        <section>
-        </section>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo/Brand -->
+          <div class="logo">
+            <p>Your cool product</p>
+          </div>
+
+          <!-- Hamburger Menu -->
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#prices" class="nav-link">Prices</a>
+            <a href="#try" class="nav-link">Try for free</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <!-- Left Content Card -->
+          <div class="hero-card-left">
+            <div class="badge">
+              <p>#1 Editors Choice App of 2020</p>
+            </div>
+
+            <div class="hero-content">
+              <h1>Some catchy line</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet mass.
+              </p>
+            </div>
+
+            <button class="btn">Try for free</button>
+          </div>
+
+          <!-- Right Content Card -->
+          <div class="hero-card-right">
+            <div class="demo-content">
+              <h2>Definitely a demo</h2>
+              <p>
+                WBS Coding School<br />
+                Lorem ipsum dolor sit.
+              </p>
+            </div>
+
+            <button class="btn">Continue</button>
+          </div>
+        </div>
+      </section>
     </header>
+
+    <!-- JavaScript for hamburger menu-->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
     <main>
-        <section class="section1"></section>
-        <section class="section2"></section>
-        <section class="section3"></section>
-        <section class="section4"></section>
-        <section class="section5"></section>
+      <section class="section1"></section>
+      <section class="section2"></section>
+      <section class="section3"></section>
+      <section class="section4"></section>
+      <section class="section5"></section>
     </main>
-    <footer> hello i am footer </footer>
-</body>
+    <footer>hello i am footer</footer>
+  </body>
 </html>
