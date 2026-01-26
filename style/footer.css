@@ -1,1 +1,26 @@
-footer {background-color: azure;}
+footer {background-color: whitesmoke;}
+
+.footer-content {
+    text-align: center;
+
+}
+
+.footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 16px;
+ margin-top:  20px;
+ text-align: center;
+ text-emphasis-color: black;
+} 
+
+.circle {
+width: 80px; ;
+height: 80px;
+background-color: #d2cecee7;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #000;
+text-decoration: none;}
