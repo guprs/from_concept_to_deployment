@@ -89,7 +89,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-  background-color: #c4c4c4;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 48px;
 }
 
@@ -100,15 +100,13 @@ body {
 }
 
 .hero-card-left {
-  background-color: #ededed;
+  border-radius: 47px;
   padding: 48px;
   max-width: 513px;
   width: 100%;
-  min-height: 458px;
 }
 
 .badge {
-  background-color: white;
   padding: 12px 24px;
   display: inline-block;
   margin-bottom: 48px;
@@ -116,7 +114,7 @@ body {
 
 .badge p {
   font-size: 18px;
-  color: black;
+  font-weight: 600;
 }
 
 .hero-content {
@@ -125,32 +123,24 @@ body {
 
 .hero-content h1 {
   font-size: 48px;
-  color: black;
   margin-bottom: 24px;
+  font-weight: 700;
 }
 
 .hero-content p {
   font-size: 18px;
-  color: black;
 }
 
 .btn {
-  background-color: white;
   padding: 16px 32px;
   font-size: 24px;
-  color: black;
   border: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #f3f4f6;
+  font-weight: 600;
 }
 
 .hero-card-right {
-  background-color: #ededed;
   border-radius: 47px;
   padding: 48px;
   max-width: 286px;
@@ -168,13 +158,12 @@ body {
 
 .demo-content h2 {
   font-size: 30px;
-  color: black;
   margin-bottom: 24px;
+  font-weight: 700;
 }
 
 .demo-content p {
   font-size: 18px;
-  color: black;
   line-height: 1.5;
 }
 
