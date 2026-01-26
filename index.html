@@ -1,24 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SE05 First Team Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-        </nav>
-        <section>
-        </section>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo/Brand -->
+          <div class="logo">
+            <p>Your cool product</p>
+          </div>
+
+          <!-- Hamburger Menu -->
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#prices" class="nav-link">Prices</a>
+            <a href="#try" class="nav-link">Try for free</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <!-- Left Content Card -->
+          <div
+            class="hero-card-left backdrop-blur-md bg-white/30 shadow-2xl border border-white/20 bg-gradient-to-br from-white/40 to-white/10"
+          >
+            <div class="badge backdrop-blur-sm bg-white/80 shadow-lg">
+              <p
+                class="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"
+              >
+                #1 Editors Choice App of 2020
+              </p>
+            </div>
+
+            <div class="hero-content">
+              <h1
+                class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+              >
+                Some catchy line
+              </h1>
+              <p class="text-gray-700 font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet mass.
+              </p>
+            </div>
+
+            <button
+              class="btn backdrop-blur-sm bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              Try for free
+            </button>
+          </div>
+
+          <!-- Right Content Card -->
+          <div
+            class="hero-card-right backdrop-blur-md bg-white/30 shadow-2xl border border-white/20 bg-gradient-to-br from-purple-400/30 to-pink-400/30"
+          >
+            <div class="demo-content">
+              <h2
+                class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+              >
+                Definitely a demo
+              </h2>
+              <p class="text-gray-700 font-medium">
+                WBS Coding School<br />
+                Lorem ipsum dolor sit.
+              </p>
+            </div>
+
+            <button
+              class="btn backdrop-blur-sm bg-gradient-to-r from-pink-500 to-rose-600 text-white hover:from-pink-600 hover:to-rose-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </section>
     </header>
+    <!-- JavaScript for hamburger menu-->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
     <main>
-        <section class="section1"></section>
-        <section class="section2"></section>
-        <section class="section3"></section>
-        <section class="section4"></section>
-        <section class="section5"></section>
+      <section class="section1"></section>
+      <section class="section2"></section>
+      <section class="section3"></section>
+      <section class="section4"></section>
+      <section class="section5"></section>
     </main>
     <footer>
         <div class="footer-content">
